@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="cat.png">
+</head>
+    <title>CAT-API</title>
+    <style>
+        body{
+            text-align: center;
+            padding:1rem;
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+        .main{
+            background-color: #949398FF;
+            border: 3px solid black;
+            height:90vh;
+            width: 97%;
+            padding: 1rem 1rem;
+            position: relative;
+        }
+
+        #cat-image{
+            height:70vh;
+            width: 97%;
+            border-radius: 20px;
+            object-fit: cover;
+            box-shadow: 43px 20px solid rgb(50, 50, 47);
+           opacity: 0.4;
+           position: absolute;
+           top: 1rem;
+           left: 1rem; 
+           z-index: 3;       
+        }
+
+        h3{
+            font-size: 50px;
+             
+             color: #F4DF4EFF;
+           
+        }
+        h1{
+           font-size: 50px;
+           font-family:cursive;
+        }
+        button{
+            color: rgb#ee1010;
+            background-color: #A7BEAE;
+            font-size: 30px;
+            border-radius: 10px;
+            box-shadow:inset 10px 10px 10px -1px rgba(27, 39, 49, 0.19),
+                       inset -10px -10px 10px -1px rgba(244, 200, 200, 0.789);
+            border: none;
+            transition: all 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transform: translate3d(2px,3px 4px);
+            cursor:pointer;
+            padding: 12px 10px;
+            background-color: azure;
+        }
+
+        button:hover{
+            font-size:34px ;
+        }
+        
+    </style>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+<div  class="main ">
+
+    <h1>Random Cat Fact...</h1>
+    <button   id = "new-cat-btn">Get Fact</button>
+    <h3></h3>
+
+    
+</div> 
+    <script src="app.js"></script>
+</body>
+</html>
